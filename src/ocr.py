@@ -5,8 +5,7 @@ from PIL import Image
 import easyocr
 
 # Load once globally
-reader = easyocr.Reader(['en'], gpu=False)  # Set gpu=False if you don't have GPU
-
+reader = easyocr.Reader(['en'], gpu=False)  
 def extract_text_with_easyocr(pdf_bytes: bytes, dpi: int = 300) -> str:
 
     text_blocks = []

@@ -15,4 +15,6 @@ coverage.xml
 # Ignore test output files
 test_output.txt
 # Ignore build directories
-build/
+decks/
+folder_structure.txt
+
