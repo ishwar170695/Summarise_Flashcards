@@ -1,0 +1,9 @@
+streamlit
+fpdf
+PyMuPDF
+spacy
+transformers
+torch
+easyocr
+youtube-transcript-api
+genanki
