@@ -1,0 +1,18 @@
+.venv/
+data/
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+# Ignore Jupyter Notebook checkpoints
+notebooks/
+# Ignore virtual environment directories
+# Ignore logs
+logs/
+# Ignore environment variable files
+.env
+# Ignore coverage reports
+coverage.xml
+# Ignore test output files
+test_output.txt
+# Ignore build directories
+build/

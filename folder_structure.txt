@@ -1,0 +1,40 @@
+summarizer-flashcards/
+├── data/
+│   ├── raw/
+│   │   ├── transcripts/             # original .txt or .srt files
+│   │   └── slides/                  # original slide images (PNG/JPG)
+│   ├── processed/
+│   │   ├── chunks/                  # tokenized text chunks (.json/.txt)
+│   │   └── ocr_text/                # OCR output (.txt)
+│   └── examples/                    # small sample lecture + slides for quick testing
+│
+├── src/
+│   ├── preprocessing/
+│   │   ├── clean_transcripts.py     # timestamp removal, filler-word filter
+│   │   ├── chunker.py               # chunk-splitting logic
+│   │   └── ocr_extractor.py         # pytesseract/easyocr wrapper
+│   │
+│   ├── pipelines/
+│   │   ├── summarizer.py            # HF summarization pipeline wrapper + prompt logic
+│   │   ├── qagen.py                 # HF question-generation wrapper
+│   │   └── fusion.py                # merges transcript + OCR text
+│   │
+│   ├── spaced_repetition/
+│   │   └── sm2.py                   # SM-2 algorithm implementation
+│   │
+│   ├── export/
+│   │   └── genanki_deck.py          # uses genanki to build .apkg decks
+│   │
+│   └── app/
+│       └── streamlit_app.py         # Streamlit front-end
+│
+├── notebooks/
+│   └── EDA_and_Prompt_Tuning.ipynb   # exploratory experiments & parameter tuning
+│
+├── models/                           # (optional) for any saved model checkpoints
+│
+├── decks/                            # output .apkg files ready for import
+│
+├── requirements.txt                  # pinned Python dependencies
+├── README.md                         # project overview & setup
+└── .gitignore
