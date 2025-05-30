@@ -1,13 +1,16 @@
-# Core App
-streamlit
-fpdf
-fitz  # If not recognized, use PyMuPDF instead: pymupdf
-pymupdf
-transformers==4.39.3
-torch==2.1.2
-sentencepiece
-spacy==3.7.2
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
-easyocr
-youtube-transcript-api
-genanki
+# Core App Dependencies
+streamlit==1.45.1
+fpdf==1.7.2
+pymupdf==1.26.0  # PyMuPDF; replaces 'fitz'
+transformers==4.52.3
+torch==2.7.0
+sentencepiece==0.2.0
+spacy==3.8.7
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0.tar.gz
+easyocr==1.7.2
+youtube-transcript-api==1.0.3
+genanki==0.13.1
+
+opencv-python==4.11.0.86
+pytesseract==0.3.13
+
