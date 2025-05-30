@@ -1,0 +1,4 @@
+tesseract-ocr
+cmake
+pkg-config
+build-essential
