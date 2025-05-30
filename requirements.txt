@@ -1,22 +1,17 @@
-# Main dependencies
 streamlit==1.45.1
 fpdf==1.7.2
 pymupdf==1.26.0
-transformers==4.52.3
-torch==2.7.0
+transformers==4.39.3
+torch==2.1.2
 sentencepiece==0.1.99
 spacy==3.8.7
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0.tar.gz
 easyocr==1.7.2
 youtube-transcript-api==1.0.3
 genanki==0.13.1
-
-# OCR and PDF support
 opencv-python-headless==4.11.0.86
 pytesseract==0.3.13
 Pillow==11.2.1
-
-# Utils
 numpy==2.2.6
 pandas==2.2.3
 scikit-image==0.25.2
