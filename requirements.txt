@@ -1,7 +1,7 @@
-# Core App Dependencies
+# --- Core for your Streamlit app ---
 streamlit==1.45.1
 fpdf==1.7.2
-pymupdf==1.26.0  # PyMuPDF; replaces 'fitz'
+pymupdf==1.26.0
 transformers==4.52.3
 torch==2.7.0
 sentencepiece==0.2.0
@@ -11,6 +11,15 @@ easyocr==1.7.2
 youtube-transcript-api==1.0.3
 genanki==0.13.1
 
-opencv-python==4.11.0.86
+# --- Supporting Libraries ---
+nltk==3.9.1
+regex==2024.11.6
+opencv-python-headless==4.11.0.86  # headless version avoids GUI issues on Streamlit Cloud
 pytesseract==0.3.13
+Pillow==11.2.1
+scikit-image==0.25.2
 
+# --- Utility Libraries ---
+tqdm==4.67.1
+numpy==2.2.6
+pandas==2.2.3
